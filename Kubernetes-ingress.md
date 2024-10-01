@@ -100,6 +100,8 @@ To create a Deployment, I used the following command:
 ```plaintext
 kubectl apply -f deployment.yaml
 ```
+<img width="491" alt="Screenshot 2024-10-01 at 1 48 09 PM" src="https://github.com/user-attachments/assets/1f878a0b-fb6e-48c2-af39-50048eefb74f">
+
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727770711387/147fbea6-04a8-435b-8148-2035f1d91c7e.png align="center")
 
@@ -142,6 +144,7 @@ To create a Service, I used the following command:
 ```plaintext
 kubectl apply -f service.yml
 ```
+<img width="612" alt="Screenshot 2024-10-01 at 1 50 41 PM" src="https://github.com/user-attachments/assets/75525b93-9dd9-4bf5-a344-a0c8278c4b68">
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727770911024/ad880614-3011-4958-83dc-3a4dd5238ea9.png align="center")
 
@@ -214,6 +217,7 @@ kubectl describe ingress ingress
 sudo vi /etc/hosts
 >> 192.168.49.2 traffic-app.com #Beacuse we dont have domain so i have configuring the domain name in etc/hots
 ```
+<img width="716" alt="Screenshot 2024-10-01 at 1 58 05 PM" src="https://github.com/user-attachments/assets/7031a204-74cf-414f-9e11-020653efe28c">
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727771303451/b992734d-4a33-4f18-9d38-a2f04554f142.png align="center")
 
@@ -223,6 +227,7 @@ sudo vi /etc/hosts
 #checking the webpage
 curl traffic-app.com
 ```
+<img width="716" alt="Screenshot 2024-10-01 at 2 00 49 PM" src="https://github.com/user-attachments/assets/75a9e68e-2961-4405-a585-4e84b2486d93">
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727771577281/8284be8c-19a1-4f10-90b2-ac1bbeb9d5fb.png align="center")
 

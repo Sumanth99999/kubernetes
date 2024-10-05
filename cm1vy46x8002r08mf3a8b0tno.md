@@ -102,9 +102,15 @@ done
 
 By running this script, I can easily clean up log files older than 30 days, keeping my system clutter-free and ensuring that I don’t run out of disk space unexpectedly.
 
-#### Example-2: Git Installation Check Script
+This script has saved me from running out of disk space unexpectedly and ensures that I’m always aware of my system’s current state.
 
-With Git being an essential tool for version control, the **Git Installation Check Script** automates the installation process, ensuring that I always have this vital tool ready for use.
+### **Additional Scripts:**
+
+Here are a few more scripts that have helped me in my day-to-day system administration:
+
+#### **Git Installation Check Script**
+
+To make sure Git is always installed on my machines, I wrote a script that checks whether Git is present and installs it based on the operating system.
 
 ```plaintext
 #!/bin/bash
@@ -141,6 +147,32 @@ else
         fi
 fi
 ```
+
+#### **Docker Monitoring Script**
+
+One of the most useful scripts I wrote recently is a **Docker monitoring script**. It checks the status of Docker and restarts the service if it has stopped. I even set up a cron job to run this script every minute to ensure my Docker services stay up and running.
+
+```plaintext
+#!/bin/bash
+
+# Description:
+# This script is used to create a cron job that will automatically monitor Docker and restart it if necessary.
+
+echo "Checking Docker status"
+status=$(systemctl status docker | awk 'NR==3 {print}' | cut -d ':' -f 2 | cut -d '(' -f 1)
+echo $status
+
+if [ $status -eq "active"]; then    
+    echo "Service is running fine"
+else
+    echo "Service is not running, action required"
+    sudo systemctl start docker
+fi
+```
+
+Instead of manually checking Docker’s status, the cron job now automatically monitors and restarts Docker as needed.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728123141506/714eb83d-e921-42b1-94f5-56b1d41ddd89.png align="center")
 
 ## Learning and Skill Development
 

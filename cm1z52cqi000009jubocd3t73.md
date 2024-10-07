@@ -12,7 +12,7 @@ This guide will walk you through setting up an ultimate CI/CD pipeline for a Jav
 
 # Spring Boot based Java web application
 
-This is a simple Sprint Boot based Java application that can be built using Maven. Sprint Boot dependencies are handled using the pom.xml at the root directory of the repository.
+This is a simple Spring Boot based Java application that can be built using Maven. Spring Boot dependencies are handled using the pom.xml at the root directory of the repository.
 
 This is a MVC architecture based application where controller returns a page with title and message attributes to the view.
 
@@ -35,15 +35,13 @@ The above maven target stroes the artifacts to the `target` directory. You can e
 
 **Note: To avoid issues with local setup, Java versions and other dependencies, I would recommend the docker way.**
 
-Output:
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728311434122/92b8ab9a-6d74-4896-8984-12ec895d70d0.png align="center")
-
-### Execute locally (Java 11 needed) and access the application on [http://localhost:8080](http://localhost:8080/)
+Execute locally (Java 11 needed) and access the application on [http://localhost:8080](http://localhost:8080/)
 
 ```plaintext
 java -jar target/spring-boot-web.jar
 ```
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728317862093/d548f952-38ad-4671-aeb9-4e09dbd24a49.png align="center")
 
 ### The Docker way
 
@@ -61,7 +59,7 @@ Hurray !! Access the application on `http://<ip-address>:8010`
 
 The final Project image is:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728312564180/c0b4a30e-b531-4f40-8c01-965bfbf06d45.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728317718812/05d5c4ed-e384-49ba-a015-ea2d14b1182a.png align="center")
 
 ## **Prerequisites**
 
@@ -93,14 +91,14 @@ Follow these steps to install Jenkins on your server:
 * For Ubuntu/Debian:
     
 * ```plaintext
-    sudo apt update
-    sudo apt install openjdk-11-jdk
-    wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-    sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-    sudo apt update
-    sudo apt install jenkins
-    sudo systemctl start jenkins
-    sudo systemctl status jenkins
+      sudo apt update
+      sudo apt install openjdk-11-jdk
+      wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+      sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+      sudo apt update
+      sudo apt install jenkins
+      sudo systemctl start jenkins
+      sudo systemctl status jenkins
     ```
     
 
@@ -122,7 +120,7 @@ Open your browser and access Jenkins at `http://<your-server-ip>:8080`.
 **Create a SonarQube user**:
 
 * ```plaintext
-    sudo adduser sonarqube
+      sudo adduser sonarqube
     ```
     
 
@@ -323,7 +321,7 @@ In Ola Cloud, Jenkins will orchestrate the build and test stages of our CI pipel
             name: example-argocd
             labels:
               example: basic
-        spec: {}                                                                                                                    ~    
+        spec: {}                                                                                                                    ~
         ```
         
         Apply the controller

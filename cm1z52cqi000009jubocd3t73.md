@@ -252,15 +252,15 @@ In Ola Cloud, Jenkins will orchestrate the build and test stages of our CI pipel
     }
     ```
     
-    After Running the Jenkins Pipe line this is the following output that indicates all the stages get executed
+    After Clicking on the Build now Jenkins, automatically execute the Pipe line. Below is the following output.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728311641453/7ce537bb-c98a-4888-bb9d-b1ff3f672228.png align="center")
     
-    And we can also check it in by logging in docker hub by searching the image name
+    And we can also verify it by logging in docker hub.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728311709384/c4583dd6-20a6-4cab-b693-5d10a465594a.png align="center")
     
-    And we can also see that the build values are also get updated in github
+    And we can also see that the build values are also get updated in github scripts.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728311852449/0a3fec93-57cd-46e3-9b2f-7af6e72d96f8.png align="center")
     

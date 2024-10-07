@@ -149,6 +149,10 @@ cd sonarqube-9.4.0.54424/bin/linux-x86-64/
         
     * Password: `admin`
         
+        ### Output:
+        
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1728318799628/1770ca90-cc10-4a9e-98a7-b6649018b76a.png align="center")
+        
 * **Create an API token** for Jenkins to communicate with SonarQube:
     
     * Go to `My Account` &gt; `Security` &gt; `Generate Tokens`.

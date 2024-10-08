@@ -21,7 +21,7 @@ This is a MVC architecture based application where controller returns a page wit
 Checkout the repo and move to the directory
 
 ```plaintext
-git clone https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/sprint-boot-app
+https://github.com/Sumanth99999/Jenkins-Zero-To-Hero.git
 cd java-maven-sonar-argocd-helm-k8s/sprint-boot-app
 ```
 
@@ -91,14 +91,14 @@ Follow these steps to install Jenkins on your server:
 * For Ubuntu/Debian:
     
 * ```plaintext
-      sudo apt update
-      sudo apt install openjdk-11-jdk
-      wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-      sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-      sudo apt update
-      sudo apt install jenkins
-      sudo systemctl start jenkins
-      sudo systemctl status jenkins
+        sudo apt update
+        sudo apt install openjdk-11-jdk
+        wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+        sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+        sudo apt update
+        sudo apt install jenkins
+        sudo systemctl start jenkins
+        sudo systemctl status jenkins
     ```
     
 
@@ -120,7 +120,7 @@ Open your browser and access Jenkins at `http://<your-server-ip>:8080`.
 **Create a SonarQube user**:
 
 * ```plaintext
-      sudo adduser sonarqube
+        sudo adduser sonarqube
     ```
     
 
